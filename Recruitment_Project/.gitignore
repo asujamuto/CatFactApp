@@ -1,0 +1,25 @@
+## Build output
+**/bin/
+**/obj/
+
+## Rider
+.idea/
+*.sln.DotSettings.user
+*.user
+*.suo
+
+## OS files
+.DS_Store
+Thumbs.db
+
+## Logs
+*.log
+
+## User secrets
+secrets.json
+
+## ASP.NET generated
+**/wwwroot/lib/
+**/wwwroot/node_modules/
+
+/Files

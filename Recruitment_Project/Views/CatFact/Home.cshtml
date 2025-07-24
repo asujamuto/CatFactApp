@@ -1,0 +1,36 @@
+@page
+@model Recruitment_Project.Views.Home.Home
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cat Fact App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+</head>
+<body>
+<div class="container">
+    <h2><strong>Cat facts</strong> that you would never know &#128008;</h2>
+    <div class="tab">
+        <div class="buttons-container">
+            <button onclick="fetchCatFact()">Get Cat Fact</button>
+            <button onclick="fetchFile()">Get Saved File Content</button>
+            <button onclick="removeFile()">Remove File</button>
+            
+            <form onsubmit="changeFileName(event)">
+                <input type="text" id="fileName" name="fileName" placeholder="Enter new file name" />
+                <button type="submit">Change</button>
+            </form>
+        </div>
+        <hr/>
+        <div class="cat-facts-container">
+            <p id="factDisplay"></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
