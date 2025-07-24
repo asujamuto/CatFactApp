@@ -37,7 +37,6 @@ public class FileManagerService : IFileManagerService
       }
       catch (Exception ex)
       {
-         // Optional: log the error
          Console.WriteLine($"Error fetching cat fact: {ex.Message}");
          return null;
       }
